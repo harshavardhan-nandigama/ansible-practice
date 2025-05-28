@@ -8,5 +8,4 @@
   tasks: 
     - name: print student deatails
       ansible.builtin.debug:
-      #vars should be souredded by {{ }}
         msg: "{{ name }} of the student and {{ branch }} and {{ vars['roll number'] }}"
