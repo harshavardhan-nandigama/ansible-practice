@@ -1,10 +1,10 @@
 - name: play level variables
-  hosts: local
-  connections:
+  hosts: localhost
+  connections: local
   vars:
     name: harsha # in shell we refer var as $var or ${var}
     branch: eee
-    roll number: 13
+    "roll number": 13
   tasks: 
     - name: print student deatails
       ansible.builtin.debug:
