@@ -1,14 +1,14 @@
 - name: play1
   hosts: loacal
-  connectoins: loacal
+  connectoin: loacal
   tasks:
-    - name: hello from play 1 and task1
-      ansible.builtin.debug:
-        msg: "hello play one and task-1"
+  - name: hello from play 1 and task1
+    ansible.builtin.debug:
+      msg: "hello play one and task-1"
 
-    - name: hello two
-      ansible.builtin.debug:
-       msg: hai man
+  - name: hello two
+    ansible.builtin.debug:
+      msg: hai man
 
 
 
