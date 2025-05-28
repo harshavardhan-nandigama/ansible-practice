@@ -1,0 +1,13 @@
+- name: play level variables
+  hosts: localhost
+  connection: local
+  vars:
+    name: harsha
+    branch: eee
+    roll_number: 13
+  tasks: 
+    - name: print student details
+      vars: 
+        name: vardhan
+      ansible.builtin.debug:
+        msg: "{{ name }} of the student and {{ branch }} and {{ roll_number }}"
