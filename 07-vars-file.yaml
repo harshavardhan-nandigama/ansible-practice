@@ -6,6 +6,6 @@
   tasks:
     - name: print varibles 
       ansible.builtin.debug:
-        msg:"student {{ name }} {{ branch }} and {{ roll_number }}"
+        msg: "student {{ name }} {{ branch }} and {{ roll_number }}"
 
     
