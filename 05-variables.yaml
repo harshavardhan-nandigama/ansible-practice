@@ -2,10 +2,10 @@
   hosts: localhost
   connection: local
   vars:
-    name: harsha # in shell we refer var as $var or ${var}
+    name: harsha  # in shell we refer var as $var or ${var}
     branch: eee
     "roll number": 13
   tasks: 
-    - name: print student deatails
+    - name: print student details
       ansible.builtin.debug:
         msg: "{{ name }} of the student and {{ branch }} and {{ vars['roll number'] }}"
