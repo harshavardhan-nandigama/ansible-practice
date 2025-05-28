@@ -1,0 +1,19 @@
+- name: understand vars
+  hosts: local
+  connection: local
+  vars: 
+    GREETINGS: "good mrng"
+  vars_files:
+    -varibles-file.yanl
+  vars_prompt:
+  - name: GREETINGS
+    prompt: please enter the GREETINGS
+    private: flase
+  tasks:
+  - name:
+    vars: 
+      GREETING "hello form task-1"
+    ansible.builtin.debug:
+      msg: "{{ GREETING }}"
+      
+    
