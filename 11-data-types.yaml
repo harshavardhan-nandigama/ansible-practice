@@ -1,0 +1,19 @@
+- name: ansible datatypes
+  hosts: localhost
+  connection: local
+  vars: 
+    branch: eee
+    name: harsha
+    roll_number: 13
+    is_man: true
+    subjects:
+    - ec
+    - de
+    - cv
+    concepts:
+      CI: jenkins
+      scripting: "shell, ansible, terroform, python"
+  tasks:
+  - name: student deatails
+    ansible.builtin.debug:
+      msg: "{{ name }}, {{roll_number}}, {{branch}}"
