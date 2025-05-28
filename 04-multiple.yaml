@@ -1,6 +1,6 @@
 - name: play1
-  hosts: loacal
-  connectoin: loacal
+  hosts: local
+  connectoin: local
   tasks:
   - name: hello from play 1 and task1
     ansible.builtin.debug:
