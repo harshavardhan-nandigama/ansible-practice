@@ -1,0 +1,12 @@
+- name: play level variables
+  hosts: local
+  connections:
+  vars:
+    name: harsha # in shell we refer var as $var or ${var}
+    branch: eee
+    roll number: 13
+  tasks: 
+    - name: print student deatails
+      ansible.builtin.debug:
+      #vars should be souredded by {{ }}
+        msg: "{{ name }} of the student and {{ branch }} and {{ roll number }}"
