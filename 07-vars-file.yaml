@@ -1,0 +1,11 @@
+- name: varibles from files
+  hosts: local
+  connectoin: local
+  vars_files:
+  - varibles-file.yaml
+  tasks:
+  - name: print varibles 
+    ansible.builtin.debug:
+      msg:"student {{ name }} {{ barnch }} and {{ roll_number }}"
+
+    
