@@ -1,0 +1,7 @@
+- name: variables from inventory
+  hosts: localhosts
+  connection: local
+  tasks:
+  - name: print 
+    ansible.builtin.debug:
+      msg: "im {{ student }} im from {{ branch }} "
