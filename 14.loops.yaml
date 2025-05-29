@@ -1,11 +1,11 @@
 - name: loops
   hosts: localhost
-  connections: local
+  connection: local
   tasks:
   - name: print names
     ansible.builtin.debug:
       msg: "hello, {{ item }}" # item is the resevred key word here
-    lopp:
+    loop:
     - harsha
     - vardhan
     - nandigama
