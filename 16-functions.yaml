@@ -20,3 +20,9 @@
         trainer: harsha
     ansible.builtin.debug:
       msg: "course info: {{ course | dict2items  }}"
+
+  - name: check ip address is valid or not
+    vars:
+      ip: "3oo.338.389.374"
+    ansible.builtin.debug:
+      msg: "is {{ ip | ansible.utils.ipaddr }}"
